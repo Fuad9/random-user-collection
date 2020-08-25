@@ -1,0 +1,15 @@
+.userInfo img {
+  width: 200px;
+  height: 200px;
+}
+
+.userInfo button {
+  width: 200px;
+  height: 30px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
