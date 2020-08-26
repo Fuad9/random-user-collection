@@ -9,19 +9,16 @@ const UserInfo = (props) => {
 
   return (
     <div className="userInfo-container">
-      <h1>People You May Know</h1>
+      <img src={img} alt="" />
       <div key={id} className="userInfo">
-        <div>
-          <img src={img} alt="" />
-          <h3>Name: {name}</h3>
-          <h3>Email: {email}</h3>
-          <h3>Address: {props.user.address.city}</h3>
-          <h3>Phone: {phone}</h3>
-          <h3>Salary: ${salary}</h3>
-          <button onClick={() => handleAddFriend(props.user)}>
-            + Add Friend
-          </button>
-        </div>
+        <h3>Name: {name}</h3>
+        <h3>Email: {email}</h3>
+        <h3>Address: {props.user.address.city}</h3>
+        <h3>Phone: {phone}</h3>
+        <h3>Salary: ${salary}</h3>
+        <button onClick={() => handleAddFriend(props.user)}>
+          + Add Friend
+        </button>
       </div>
     </div>
   );

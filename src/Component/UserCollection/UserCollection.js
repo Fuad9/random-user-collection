@@ -9,8 +9,8 @@ const UserCollection = (props) => {
   );
   return (
     <div>
-      <h4>Friends Added: {props.friends.length}</h4>
-      <h4>Total salary of friends: ${totalSalary}</h4>
+      <h3>Friends Added: {props.friends.length}</h3>
+      <h3>Total salary of friends: ${totalSalary}</h3>
     </div>
   );
 };
