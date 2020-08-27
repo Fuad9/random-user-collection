@@ -28,7 +28,7 @@ function App() {
           ))}
         </div>
         <div className="user-collection">
-          <h1>Friends Info</h1>
+          <h1>Friends Info:</h1>
           <UserCollection friends={friends}></UserCollection>
         </div>
       </header>

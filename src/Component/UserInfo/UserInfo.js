@@ -1,6 +1,6 @@
 import React from "react";
 import "./UserInfo.css";
-// import UserCollection from "../UserCollection/UserCollection";
+import Button from "react-bootstrap/Button";
 
 const UserInfo = (props) => {
   const { id, img, name, email, phone, salary } = props.user;
@@ -9,16 +9,18 @@ const UserInfo = (props) => {
 
   return (
     <div className="userInfo-container">
-      <img src={img} alt="" />
-      <div key={id} className="userInfo">
+      <div className="userInfo-img">
+        <img src={img} alt="" />
+      </div>
+      <div key={id} className="ml-5">
         <h3>Name: {name}</h3>
         <h3>Email: {email}</h3>
         <h3>Address: {props.user.address.city}</h3>
         <h3>Phone: {phone}</h3>
         <h3>Salary: ${salary}</h3>
-        <button onClick={() => handleAddFriend(props.user)}>
+        <Button variant="primary" onClick={() => handleAddFriend(props.user)}>
           + Add Friend
-        </button>
+        </Button>
       </div>
     </div>
   );

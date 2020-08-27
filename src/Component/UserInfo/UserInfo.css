@@ -9,13 +9,12 @@
   margin-left: 80px;
 }
 
-.userInfo img {
-  width: 400px;
-  height: 400px;
-  border: 2px solid red;
+.userInfo-img img {
+  width: 200px;
+  height: 200px;
 }
 
-.userInfo button {
+/* .userInfo button {
   width: 100px;
   height: 30px;
   border: 2px solid red;
@@ -24,4 +23,4 @@
   color: white;
   font-weight: bold;
   cursor: pointer;
-}
+} */
